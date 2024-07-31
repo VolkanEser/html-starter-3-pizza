@@ -4,7 +4,7 @@
 :root {
     --main-color: #e84242;
     --black-color: #020202;
-    --border: 0.1rem solid rgba (255, 255, 255, 0.5)
+    --border: 0.1rem solid rgb(255 255 255)
 }
 
 * {
@@ -96,6 +96,16 @@ a {
     text-transform: uppercase;
 }
 
+.search-input {
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+
+
+
+}
 
 /*! header start*/
 
@@ -409,29 +419,30 @@ a {
     background-color: #fff;
     border-radius: 3rem;
 }
-.review .box-container .box p{
+
+.review .box-container .box p {
     font-size: 1.5rem;
     line-height: 1.8rem;
-    padding:2rem 0 ;
-    
+    padding: 2rem 0;
+
 
 }
 
-.review .box-container .box  .user{
+.review .box-container .box .user {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
-    object-fit: cover ;
+    object-fit: cover;
 }
 
-.review .box-container .box h3{
+.review .box-container .box h3 {
     padding: 1rem;
     font-size: 2rem;
     color: var(--main-color);
 }
 
 
-.review .box-container .box .stars i{
+.review .box-container .box .stars i {
     font-size: 1.5rem;
     color: gold;
 }
@@ -440,3 +451,219 @@ a {
 
 
 /*! review end */
+
+/*! contact  start */
+
+
+.contact .row {
+    display: flex;
+    background-color: var(--black-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-content: center;
+    margin: 2rem 0;
+    border: var(--border);
+
+}
+
+.contact .row form .inputBox i {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background-color: transparent;
+}
+
+.contact .row form .btn {
+    color: var(--main-color);
+    background-color: #fff;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*! contact end */
+
+/*! blog   start */
+
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /* Eksik virgül düzeltildi */
+    gap: 1.5rem;
+    /* Kutular arasındaki boşluk */
+}
+
+.blogs .box-container .box {
+    background-color: #fff;
+    border-radius: 3rem;
+    box-sizing: border-box;
+    /* Padding ve border'ları genişliğe dahil eder */
+}
+
+.blogs .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.blogs .box-container .box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Resmin uygun şekilde kesilmesini sağlar */
+}
+
+
+
+
+.blogs .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+
+}
+
+
+.blogs .box-container .box .content .title {
+    line-height: 1.5rem;
+    font-size: 2.5rem;
+
+}
+
+.blogs .box-container .box .content span {
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+
+}
+
+
+.blogs .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+
+/*! blog end */
+
+/*! footer start */
+.footer {
+    background-color: var(--black-color);
+    text-align: center;
+}
+
+.footer .search {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .search .search-input {
+    width: 30rem;
+}
+
+
+.footer .search .btn-primary {
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+
+}
+
+
+.footer .share {
+    padding: 2rem 0;
+
+}
+
+.footer .share a {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    border: var(--border);
+    border-radius: 50%;
+    margin: 0.3rem;
+
+}
+
+.footer .share a:hover {
+    background-color: var(--main-color);
+
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .links a {
+    background-color: var(--main-color);
+    padding: 0.7rem 2rem;
+    color: #fff;
+    font-size: 2rem;
+    border: var(--border);
+
+
+}
+
+.footer .links a:hover {
+    background-color: var(--black-color);
+    opacity: 0.7;
+}
+
+.footer .links a.active {
+
+    background-color: var(--black-color);
+
+}
+
+
+
+
+/*! footer  end */
