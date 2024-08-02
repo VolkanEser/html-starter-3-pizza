@@ -184,7 +184,7 @@ a {
 
 }
 
-.header .navbar.active,
+.header .navbar .active,
 .header .navbar a:hover {
     border-color: var(--main-color);
     padding-bottom: 0.5rem;
@@ -567,12 +567,11 @@ a {
 
 }
 
-
-
 .contact .row .map {
     flex: 1 1 45rem;
     width: 100%;
-    object-fit: cover;
+    /* Eğer bir resimse, object-fit kullanılabilir; aksi halde kaldırılabilir */
+    /* object-fit: cover; */
 }
 
 .contact .row form {
@@ -584,22 +583,20 @@ a {
 .contact .row form h3 {
     text-transform: uppercase;
     font-size: 3.5rem;
-    color: #fff
+    color: #fff;
 }
 
 .contact .row form .inputBox {
     display: flex;
-    align-content: center;
+    align-items: center; /* align-content yerine align-items kullanımı */
     margin: 2rem 0;
-    border: var(--border);
-
+    border: var(--border); /* var(--border) değişkeni doğru tanımlanmış mı? */
 }
 
-.contact .row form .inputBox i{
+.contact .row form .inputBox i {
     color: #fff;
     font-size: 2rem;
     padding-left: 2rem;
-
 }
 
 .contact .row form .inputBox input {
@@ -607,17 +604,14 @@ a {
     padding: 2rem;
     font-size: 1.7rem;
     color: #fff;
-    text-transform: none;
     background-color: transparent;
 }
 
 .contact .row form .btn {
-    color: var(--main-color);
+    color: var(--main-color); /* var(--main-color) değişkeninin doğru tanımlandığından emin ol */
     background-color: #fff;
     font-weight: bold;
 }
-
-
 
 
 
@@ -837,7 +831,7 @@ a {
         right: -100%;
     }
 
-    .header .navbar .active {
+    .header .navbar.active {
         right: 3rem;
     }
 
