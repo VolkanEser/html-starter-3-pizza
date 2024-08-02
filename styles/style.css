@@ -8,7 +8,7 @@
 }
 
 * {
-    font-family: " popins", sans-serif;
+    font-family: " Popins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -206,7 +206,6 @@ a {
     background-color: #fff;
     box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
     right: -100%;
-    display: none;
 
 
 }
