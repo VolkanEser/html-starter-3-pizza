@@ -184,7 +184,7 @@ a {
 
 }
 
-.header .navbar .active,
+.header .navbar.active,
 .header .navbar a:hover {
     border-color: var(--main-color);
     padding-bottom: 0.5rem;
